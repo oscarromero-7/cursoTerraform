@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     azurerm = {
-      source = "hashicorp/azurerm"
+      source  = "hashicorp/azurerm"
       version = "4.16.0"
     }
   }
@@ -14,5 +14,5 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "rg" {
   location = "mexicocentral"
-  name = var.rg_nombre
+  name     = var.rg_nombre
 }
