@@ -9,15 +9,10 @@ terraform {
 
 provider "azurerm" {
   features {}
-  subscription_id = "tu ID de la suscripción de Azure"
-}
-
-variable "nombre_grupo_recursos" {
-  type = string
-  default = "miPrimerGrupoAmin"  
+  subscription_id = "30a83aff-7a8b-4ca3-aa48-ab93268b5a8b"
 }
 
 resource "azurerm_resource_group" "rg" {
   location = "mexicocentral"
-  name = var.nombre_grupo_recursos
+  name = var.rg_nombre
 }
