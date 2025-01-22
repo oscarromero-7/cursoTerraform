@@ -1,8 +1,3 @@
-/* LO QUE DEBES CREAR:
-Interfaz de red
-Máquina virtual
-*/
-
 resource "azurerm_resource_group" "rg" {
   location = var.location
   name     = var.resource_group_name
