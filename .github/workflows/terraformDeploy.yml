@@ -1,3 +1,5 @@
+name: 'Terraform deploy'
+
 on:
   push:
     branches: [ "main" ]
@@ -31,3 +33,7 @@ jobs:
     - name: Terraform plan
       id: plan
       run: terraform plan -out plan.out
+
+    - name: Terraform apply
+      id: apply
+      run: terraform apply "plan.out"
